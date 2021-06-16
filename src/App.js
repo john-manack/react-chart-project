@@ -1,15 +1,14 @@
 import './App.css';
-
-const data = [
-  { name: "John", gender: "male", math: 100, physics: 80 },
-  { name: "Jane", gender: "female", math: 80, physics: 20 },
-  { name: "Biju", gender: "male", math: 60, physics: 90 },
-];
+import data from './data.js';
 
 function App() {
+  console.log('data is: ', data);
   return (
     <div className="App">
       <h1>Chart App</h1>
+      <div>
+        
+      </div>
     </div>
   );
 }
