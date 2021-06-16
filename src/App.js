@@ -1,15 +1,27 @@
 import './App.css';
-import data from './data.js';
+import { Bar } from 'react-chartjs-2';
+import data from './sampleData';
 
 function App() {
-  console.log('data is: ', data);
+  const options = {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
+  };
+
   return (
-    <div className="App">
-      <h1>Chart App</h1>
-      <div>
-        
+    <>
+      <div className="App">
+        <h1>Chart App</h1>
       </div>
-    </div>
+      <Bar data={data} options={options}/>
+    </>
   );
 }
 
