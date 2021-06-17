@@ -20,7 +20,10 @@ function App() {
       <div className="App">
         <h1>Chart App</h1>
       </div>
-      <Bar data={data} options={options}/>
+      <div className="App-chart">
+        <h2>Subject Scoring Data by Student</h2>
+        <Bar data={data} options={options} />
+      </div>
     </>
   );
 }

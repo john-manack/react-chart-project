@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.App-chart {
+  width: 60rem;
+  margin: 2rem;
+}

@@ -5,7 +5,7 @@ const originalData = [
 ];
 
 const data = {
-  labels: originalData.map((obj) => obj.name),
+  labels: originalData.map((obj) => `${obj.name} | Gender: ${obj.gender === "male" ? "M" : "F"}`),
   datasets: [
     {
       label: "Math Score",
